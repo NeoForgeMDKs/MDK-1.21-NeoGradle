@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
-    id 'net.neoforged.gradle.userdev' version '7.1.12'
+    id 'net.neoforged.gradle.userdev' version '7.1.13'
 }
 
 tasks.named('wrapper', Wrapper).configure {
