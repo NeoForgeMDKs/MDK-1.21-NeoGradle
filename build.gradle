@@ -22,6 +22,7 @@ sourceSets.main.resources {
 
     // Exclude common development only resources from finalized outputs
     exclude("**/*.bbmodel") // BlockBench project files
+
     exclude("src/generated/**/.cache") // datagen cache files
 }
 
@@ -129,6 +130,7 @@ dependencies {
 
 // This block of code expands all declared replace properties in the specified resource targets.
 // A missing property will result in an error. Properties are expanded using ${} Groovy notation.
+
 // When "copyIdeResources" is enabled, this will also run before the game launches in IDE environments.
 // See https://docs.gradle.org/current/dsl/org.gradle.language.jvm.tasks.ProcessResources.html
 tasks.withType(ProcessResources).configureEach {
